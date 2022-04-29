@@ -1,0 +1,50 @@
+<html>
+<head>
+    <title>DELETE</title>
+    <script type="text/javascript" src="sendRequests.js"></script> 
+    <meta charset="UTF-8">
+</head>
+<body>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home<span class="sr-only">(Página atual)</span></a>
+            </li>
+          <li class="nav-item">
+              <a class="nav-link" href="put.html">Criar Receita</a>
+            </li>
+          <li class="nav-item">
+            <a class="nav-link" href="post.html">Alterar Receita</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="delete.html">Apagar Receita</a>
+          </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="mx-auto" style="width: 310px;">
+        <h1> Remover receita </h1>
+        <h3 style="padding:0 0 0 0.8em;"> Requisição DELETE </h3>
+      <br>
+      
+    <form accept-charset="utf-8" id="conteudo" class="mx-auto" style="width: 900px;">
+    </div>
+        <div class="form-group row mx-auto"  style="width: 1000px;">
+          <label class="col-sm-8 col-form-label"><h2> Qual Receita deseja Remover? </h2></label>
+        
+          <input name ="caminho" type="text" class="form-control"  id="caminho" style="position: relative; left: 18px;">
+        
+        
+      </div>
+        <div class="mx-auto" style="width: 200px;">
+            <br>
+            <button onclick="sendDELETERequest()" id="button" class="btn btn-dark" style="width: 200px;"> Deletar esta receita! </button>
+        </div>
+      </form>
+</body>
+</html>
